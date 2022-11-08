@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDIAS EM HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador!</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/Pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/Medio.png" type="image/png">
+        <img src="images/Grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reprodução de audio:</h1>
+    <p>Vamos aprender a reproduzir audio no html5</p>
+    <!-- <audio src="images/ratinho.mp3" autoplay controls></audio> -->
+    <!-- MP3 WAV OGG -->
+    <!-- AUTO = CARREGAMENTO COMPLETO, METADATA = NOME DO ARQUIVO, DURAÇAO, NONE = NADA -->
+    <audio preload="metadata" controls loop>
+        <source src="images/ratinho.mp3" type="audio/mpeg">
+        <p>infelizmente seu navegador nao consegue reproduzir audio!</p>
+    </audio>
+    <br>
+    <h1>Reproduçao de video:<h1>
+    <video controls>
+        <source src="images/WATERMELON IN SOIL - Time Lapse [4K].m4a" type="video/mp4>
+    </video>
+</body>
+</html>

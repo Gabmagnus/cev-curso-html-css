@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUTRAS FORMATAÇOES</title>
+    <title>EX009 - LISTAS</title>
 </head>
 <body>
-    <h1>OUTRAS FORMATAÇÕES</h1>
-    <H2>Código fonte</H2>
-    <p>O comando <code>document.getItemByID('teste')</code> é escrito em linguagem de programaçao com semantica utilizando a tag CODE</p>
-        <pre>
-            <code>
-            
-            
-            
-    num = int(input('Digite um numero'))
-    if num % 2 == 0:
-        print(f'{num} é par')
-    else:
-        print(f'{num} é impar')
-    print('Fim do programa')
-            &UpArrow; Foi feito utilizando a tag PRE
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas - TAG OL</h2>
+    <ol type="1" start="1"><!--I i A a 1-->
+        <li>Acordar <!--- FECHAMENTO DE LI OPCIONAL-->
+        <li>Ligar joao</li>
+        <li>Toamr café</li>
+        <li>Escovar dentes</li>
+        <li>Faculdade</li>
+        <li>Trampo</li>
+        <li>Voltar pra casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas nao ordenadas - TAG UL</h2>
+    <ul> <!--Disc circle square-->
+        <li>Pao</li>
+        <li>leite</li>
+        <li>tomate</li>
+        <li>manteiga</li>
+        <li>arroz</li>
+        <li>Feijao</li>
+    </ul>
+    <h2>Juntando listas - TAG </h2>
+    <ol>
+        <li>Salgados</li>
+        <ul type="square--">
+            <li>Pastel</li>
+            <li>Coxinha</li>
+            <li>Risoles</li>
+        </ul>
+        <li>Doces</li>
+        <ul type="--Disc">
+            <li>Pudim</li>
+            <li>Brigadeiro</li>
+            <li>Bolo</li>
 
-
-            </code>
-        </pre>
-    <h2>Citação:</h2>
-    <p>como diria o pai de um amigo: <q>pinga, puta e foguete</q> com semantica utilizando a tag Q</p>
-        <br>
-        <p>Segundo olavo de carvalho, em seu livro parei de fumar em um dia: </p>
-        <blockquote cite='https://pt.wikipedia.org/wiki/Olavo_de_Carvalho'>
-            &#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480; &#x1F480;&#x1F480;&#x1F480;, &#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480;, &#x1F480;&#x1F480;&#x1F480;. &#x1F480;&#x1F480;&#x1F480;&#x1F480; &#x1F480;&#x1F480; &#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480; &#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480;&#x1F480;, &#x1F480;&#x1F480;&#x1F480;&#x1F480;. &#x1F480;&#x1F480;&#x1F480;. <br>
-            &UpArrow; Bloco de citaçao com a tag BLOCKQUOTE, pode citar com link.
-        </blockquote>
-        <h2>Abreviaçoes</h2>
-        <p>estou estudando <abbr title="HYPERTEXT MARKUP LANGUAGE">HTML</abbr> e <abbr title="CASCATE STYLE SHEETS">CSS</abbr> abreviaçoes com a tag ABBR</p>
-        <H2>Texto Invertido</H2>
-        <p><bdo dir="rtl">Estou aprendendo a criar coisas em html</bdo> texto invertido criado a partir da tag BDO 'rtl' (right to left)</p>
-    </body>
+        </ul>
+    </ol>
+    <h2>lista de Dicionários</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcaçao para desenvolvimento de sites.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo para desenvolvimento de sites.</dd>
+    </dl>
+</body>
 </html>
