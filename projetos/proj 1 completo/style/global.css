@@ -109,7 +109,7 @@ article.materia > p {
 div.video {
     height: auto;
     background-color: var(--cor04);
-    margin: 15 -15px 15 -15px;
+    margin: 15px -15px 15px -15px;
     padding: 70px;
     padding-bottom: 50%;
     position: relative;
@@ -128,13 +128,13 @@ div.video > iframe {
 aside#aprendermais {
     background-color: var(--cor03);
     border-radius: 15px;
-    padding: 10;
+    padding: 10px;
 }
 
 aside#aprendermais > h2 {
     background-color: var(--cor05);
     color: var(--cor03);
-    margin: -10;
+    margin: -10px;
     padding: 5px;
     border-radius: 15px 15px 0px 0px;
 
