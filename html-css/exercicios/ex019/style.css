@@ -1,0 +1,42 @@
+@charset "UTF8";
+
+
+
+
+body {
+    font: 100 normal 1em Arial, sans-serif;
+    background-color: #4A4063;
+}
+h1 {
+    color: #783F8E;
+    text-shadow: 1px 1px 2px;
+}
+
+h1#titulo {
+    background-color: #4F1271;
+    text-align: center;
+}
+
+h2 {
+    color: #C8C6D7
+}
+
+.basico::after {
+    
+    color: green;
+    font-weight: bold;
+}
+
+.inter {
+    color: yellow;
+    font-weight: bold;
+}
+
+.avan {
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    color: #BBC7CE;
+}
