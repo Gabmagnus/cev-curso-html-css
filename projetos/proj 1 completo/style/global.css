@@ -42,7 +42,6 @@
 
 /* Corpo principal */
 body {
-    float: left;
     background-color: var(--cor02);
     font: 100 1em arial;
     margin: 0px;
