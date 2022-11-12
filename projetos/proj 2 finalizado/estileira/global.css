@@ -45,25 +45,21 @@ header > h2 > a {
     text-decoration: none;
     color: white;
 }
-section#flor {
-    width: 100%;
-    background-size: 100%;
-    background: var(--black) url('../imagens/background001.jpg') center center no-repeat fixed;
-}
-section#book {
-    width: 100%;
-    padding-top: 1px;
-    background-size: 100%;
-    background: var(--black) url('../imagens/background002.jpg') center center no-repeat fixed;
+
+
+
+
+.shadow {
+    box-shadow: 40px 40px 40px lightblue;
 }
 
-article.preenchido {
+section.preenchido {
     height: auto;
     background-color: white;
     padding: 30px;
 }
 
-article.preenchido > p {
+section.preenchido > p {
     margin: 5px;
     font: 100 3vw var(--sri);
     text-align: left;
@@ -71,7 +67,7 @@ article.preenchido > p {
 
 }
 
-article.vazio {
+section.imagem {
     display: inline-block;
     margin: 120px 0px;
     height: auto;
@@ -80,11 +76,33 @@ article.vazio {
     padding: 30px;
 }
 
-article.vazio > p {
+section.imagem > p {
     margin: 5px;
     font: 100 3vw var(--sri);
     text-align: left;
     color: white;
+}
+
+section#flor {
+    width: 100%;
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    box-shadow: inset 0px 400px 50px black, inset 0px -670px 50px black; 
+}
+section#book {
+    width: 100%;
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:initial;
+
+    box-shadow: inset 0px 20px 50px black, inset 0px -670px 50px black; 
+
 }
 
 footer {
