@@ -1,0 +1,85 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --blank: white;
+    --black: black;
+
+    --sri: 'Sriracha', cursive;
+    --passion: 'Passion One', cursive;
+}
+body {
+
+    background-size: cover; 
+    margin: 0px;
+    /* font: normal normal 1em var(--sri); */
+    font-size: 100%
+}
+
+header {
+    position: sticky;
+    top: -25px;
+    background-color: var(--black);
+    color: var(--blank);
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    font: 700 3em var(--passion);
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+header > h2 {
+    font: normal normal 1em Arial;
+    padding: 0;
+    margin: -10px 10px 10px 10px;
+}
+
+header > h2 > a {
+    font: normal 400 1.5em var(--passion);
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+    text-decoration: none;
+    color: white;
+}
+section#flor {
+    width: 100%;
+    background: var(--black) url('../imagens/background001.jpg') center center no-repeat fixed;
+}
+section#book {
+    width: 100%;
+    padding-top: 1px;
+    background: var(--black) url('../imagens/background002.jpg') center center no-repeat fixed;
+}
+
+article.preenchido {
+    height: auto;
+    background-color: white;
+    padding: 30px;
+}
+
+article.preenchido > p {
+    margin: 5px;
+    font: 100 1em var(--sri);
+    text-align: left;
+    color: black;
+
+}
+
+article.vazio {
+    margin: 120px 0px;
+    height: auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 30px;
+}
+
+article.vazio > p {
+    margin: 5px;
+    font: 100 1em var(--sri);
+    text-align: left;
+    color: white;
+}
