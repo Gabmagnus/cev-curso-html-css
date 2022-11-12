@@ -111,6 +111,11 @@ article.materia > p {
 
 }
 
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
 div.video {
     height: auto;
     background-color: var(--cor04);
