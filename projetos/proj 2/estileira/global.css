@@ -48,13 +48,13 @@ header > h2 > a {
 section#flor {
     width: 100%;
     background-size: 100%;
-    background: var(--black) url('../imagens/background001.jpg') right center no-repeat fixed;
+    background: var(--black) url('../imagens/background001.jpg') center center no-repeat fixed;
 }
 section#book {
     width: 100%;
     padding-top: 1px;
     background-size: 100%;
-    background: var(--black) url('../imagens/background002.jpg') right center no-repeat fixed;
+    background: var(--black) url('../imagens/background002.jpg') center center no-repeat fixed;
 }
 
 article.preenchido {
