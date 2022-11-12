@@ -87,3 +87,20 @@ article.vazio > p {
     color: white;
     font-size: 3vh;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font: normal normal 1em var(--passion);
+    text-align: center;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+footer > p > a{
+    color: whitesmoke;
+    text-decoration: none;
+}
