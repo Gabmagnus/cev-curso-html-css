@@ -75,7 +75,7 @@ article.preenchido > p {
 article.vazio {
     margin: 120px 0px;
     height: auto;
-    width: 300px;
+    width: 50vh;
     background-color: rgba(0, 0, 0, 0.288);
     padding: 30px;
 }
