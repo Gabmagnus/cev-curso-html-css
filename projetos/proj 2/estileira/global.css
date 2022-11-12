@@ -47,12 +47,14 @@ header > h2 > a {
 }
 section#flor {
     width: 100%;
-    background: var(--black) url('../imagens/background001.jpg') center center no-repeat fixed;
+    background-size: 100%;
+    background: var(--black) url('../imagens/background001.jpg') right center no-repeat fixed;
 }
 section#book {
     width: 100%;
     padding-top: 1px;
-    background: var(--black) url('../imagens/background002.jpg') center center no-repeat fixed;
+    background-size: 100%;
+    background: var(--black) url('../imagens/background002.jpg') right center no-repeat fixed;
 }
 
 article.preenchido {
@@ -66,13 +68,14 @@ article.preenchido > p {
     font: 100 1em var(--sri);
     text-align: left;
     color: black;
+    font-size: 3vh;
 
 }
 
 article.vazio {
     margin: 120px 0px;
     height: auto;
-    width: 50%;
+    width: 300px;
     background-color: rgba(0, 0, 0, 0.288);
     padding: 30px;
 }
@@ -82,4 +85,5 @@ article.vazio > p {
     font: 100 1em var(--sri);
     text-align: left;
     color: white;
+    font-size: 3vh;
 }
