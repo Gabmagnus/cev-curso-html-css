@@ -27,19 +27,19 @@ header {
 }
 
 header > h1 {
-    font: 700 3em var(--passion);
+    font: 700 10vw var(--passion);
     padding: 0px;
     margin: 10px 0px 0px 0px;
 }
 
 header > h2 {
-    font: normal normal 1em Arial;
+    font: normal normal 2vw Arial;
     padding: 0;
     margin: -10px 10px 10px 10px;
 }
 
 header > h2 > a {
-    font: normal 400 1.5em var(--passion);
+    font: normal 400 3vw var(--passion);
     padding: 0px;
     margin: 10px 0px 0px 0px;
     text-decoration: none;
@@ -65,27 +65,26 @@ article.preenchido {
 
 article.preenchido > p {
     margin: 5px;
-    font: 100 1em var(--sri);
+    font: 100 3vw var(--sri);
     text-align: left;
     color: black;
-    font-size: 3vh;
 
 }
 
 article.vazio {
+    display: inline-block;
     margin: 120px 0px;
     height: auto;
-    width: 50vh;
+    width: auto;
     background-color: rgba(0, 0, 0, 0.288);
     padding: 30px;
 }
 
 article.vazio > p {
     margin: 5px;
-    font: 100 1em var(--sri);
+    font: 100 3vw var(--sri);
     text-align: left;
     color: white;
-    font-size: 3vh;
 }
 
 footer {
