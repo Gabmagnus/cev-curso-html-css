@@ -52,6 +52,7 @@ section#img1 > h2 {
 
 
 
+
 .container {
     height: auto;
     display: flex;
@@ -60,88 +61,58 @@ section#img1 > h2 {
     padding: 350px 30px 350px 30px;
 }
 
-.montagem{
+.ltsquare{
     height: 500px;
     width: 500px;
     margin: auto;
-    background-image: url("../images/background002.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     box-shadow: 1px 1px 10px black;
-    
-    filter: brightness(100%);
+    float: top;
+    filter: brightness(70%);
 }
 
-.montagem:hover{
-    height: 500px;
-    width: 500px;
-    background-image: url("../images/background002.jpg");
-    background-color: darkgray;
-    background-position: center;
-    box-shadow: 1px 1px 50px black;
-
-    filter: brightness(50%);
+.ltsquare:hover {
+    filter: brightness(100%);
     transition: all 1s ease;
+}
+
+.montagem{
+    background-image: url("../images/background002.jpg");
 }
 
 .market{
-    height: 500px;
-    width: 500px;
-    margin: auto;
     background-image: url("../images/comprasplchldr.webp");
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px black;
-    
-    filter: brightness(100%);
-}
-
-.market:hover{
-    height: 500px;
-    width: 500px;
-    background-image: url("../images/comprasplchldr.webp");
-    background-color: darkgray;
-    background-position: center;
-    box-shadow: 1px 1px 50px black;
-
-    filter: brightness(50%);
-    transition: all 1s ease;
 }
 
 .medicao{
-    height: 500px;
-    width: 500px;
-    margin: auto;
     background-image: url("../images/mediçãoplchldr.png");
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px black;
-    
-    filter: brightness(100%);
 }
 
-.medicao:hover {
-    height: 500px;
-    width: 500px;
-    background-image: url("../images/mediçãoplchldr.png");
-    background-color: darkgray;
-    background-position: center;
-    box-shadow: 1px 1px 50px black;
-
-    filter: brightness(50%);
-    transition: all 1s ease;
-}
-
-.montagem, .market, .medicao > h2, h2, h2 {
+.ltsquare > h2 {
     text-align: center;
     background-color: white;
-    vertical-align: bottom;
+    position: inherit;
+    vertical-align: text-bottom;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
 }
-
-
+.ltsquare > p {
+    font: 400 1.5em arial;
+    text-align: center;
+    color: white;
+    margin-top: -90%;
+    filter: opacity(0%);
+}
+.ltsquare:hover > p {
+    font: 400 1.5em arial;
+    text-align: center;
+    color: white;
+    margin-top: -90%;
+    filter: opacity(100%);
+    text-shadow: 2px 2px 2px black;
+}
 
 section#img2 {
     background-image: url('../images/background002.jpg');
