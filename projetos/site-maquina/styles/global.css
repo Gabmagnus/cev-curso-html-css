@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(214, 214, 214, 1);
+    height: 130px;
+    top: -5px;
+}
+
+#logo {
+    width: 130px;
+    height: 130px;
+    margin-left: 50%;
+}
+
+section#img1 {
+    background-image: url('../images/background001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    box-shadow: inset 2px 2px 20px black;
+    background-attachment: fixed;
+
+    position: relative;
+
+
+}
+
+section#img1 > h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font: 800 10vh arial;
+    line-height: 100%;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+section#img1 > h2 {
+    position: relative;
+    color: rgb(202, 202, 202);
+    text-align: center;
+    font: 800px 5vh arial;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+
+
+
+.container {
+    height: auto;
+    display: flex;
+    background-color: darkslategray;
+    align-content: center;
+    padding: 350px 30px 350px 30px;
+}
+
+.montagem{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-image: url("../images/background002.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    
+    filter: brightness(100%);
+}
+
+.montagem:hover{
+    height: 500px;
+    width: 500px;
+    background-image: url("../images/background002.jpg");
+    background-color: darkgray;
+    background-position: center;
+    box-shadow: 1px 1px 50px black;
+
+    filter: brightness(50%);
+    transition: all 1s ease;
+}
+
+.market{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-image: url("../images/comprasplchldr.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    
+    filter: brightness(100%);
+}
+
+.market:hover{
+    height: 500px;
+    width: 500px;
+    background-image: url("../images/comprasplchldr.webp");
+    background-color: darkgray;
+    background-position: center;
+    box-shadow: 1px 1px 50px black;
+
+    filter: brightness(50%);
+    transition: all 1s ease;
+}
+
+.medicao{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-image: url("../images/mediçãoplchldr.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    
+    filter: brightness(100%);
+}
+
+.medicao:hover {
+    height: 500px;
+    width: 500px;
+    background-image: url("../images/mediçãoplchldr.png");
+    background-color: darkgray;
+    background-position: center;
+    box-shadow: 1px 1px 50px black;
+
+    filter: brightness(50%);
+    transition: all 1s ease;
+}
+
+.montagem, .market, .medicao > h2, h2, h2 {
+    text-align: center;
+    background-color: white;
+    vertical-align: bottom;
+}
+
+
+
+section#img2 {
+    background-image: url('../images/background002.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+
+    box-shadow: inset 2px 2px 20px black;
+    background-attachment: fixed;
+}
+
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+}
