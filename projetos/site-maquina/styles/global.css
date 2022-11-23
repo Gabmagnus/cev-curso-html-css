@@ -1,3 +1,12 @@
+:root {
+    --cor01: #83FDDF;
+    --cor02: #38FCCB;
+    --cor03: #2CCCA3;
+    --cor04: #1B7D65;
+    --cor05: #417D6E;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,34 +14,64 @@
 }
 
 header {
-    background-color: rgba(214, 214, 214, 1);
-    height: 130px;
-    top: -5px;
+    display: flex;
+    top: -10px;
+    background-color: var(--cor05);
+    height: 100px;
 }
 
 #logo {
-    width: 130px;
-    height: 130px;
-    margin-left: 50%;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
 }
 
+nav {
+    align-self: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+nav > a {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--cor05);
+
+    text-align: right;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav > a:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--cor04);
+
+    text-align: right;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
 section#img1 {
     background-image: url('../images/background001.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
-    box-shadow: inset 2px 2px 20px black;
     background-attachment: fixed;
 
+    box-shadow: inset 2px 2px 20px black;
+
     position: relative;
-
-
+    height: 100vh;
 }
 
 section#img1 > h1 {
     position: relative;
     color: white;
+    text-shadow: 2px 2px 2px black;
     text-align: center;
     font: 800 10vh arial;
     line-height: 100%;
@@ -43,75 +82,76 @@ section#img1 > h1 {
 section#img1 > h2 {
     position: relative;
     color: rgb(202, 202, 202);
+    text-shadow: 2px 2px 2px black;
     text-align: center;
     font: 800px 5vh arial;
     top: 45%;
     transform: translateY(-50%);
 }
 
-
-
-
-
 .container {
-    height: auto;
     display: flex;
-    background-color: darkslategray;
-    align-content: center;
-    padding: 350px 30px 350px 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: auto;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    background-color: var(--cor05);
 }
 
-.ltsquare{
-    height: 500px;
-    width: 500px;
-    margin: auto;
+.interactive-box{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 40px;
+
+
     background-size: cover;
     background-position: center;
+
     border-radius: 20px;
-    box-shadow: 1px 1px 10px black;
-    float: top;
     filter: brightness(70%);
+    box-shadow: 2px 2px 10px black;
 }
 
-.ltsquare:hover {
+.interactive-box:hover {
     filter: brightness(100%);
     transition: all 1s ease;
+    
+    box-shadow: 2px 2px 20px black;
+
 }
 
-.montagem{
-    background-image: url("../images/background002.jpg");
-}
-
-.market{
-    background-image: url("../images/comprasplchldr.webp");
-}
-
-.medicao{
-    background-image: url("../images/mediçãoplchldr.png");
-}
-
-.ltsquare > h2 {
+.interactive-box > h3 {
+    position: absolute;
+    align-self: flex-end;
     text-align: center;
+
+    padding: 10px;
     background-color: white;
-    position: inherit;
-    vertical-align: text-bottom;
-    padding: 20px;
-    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+
+    border-radius: 0px 0px 20px 20px;
 }
-.ltsquare > p {
-    font: 400 1.5em arial;
+
+.interactive-box > p {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
     text-align: center;
+    
+    font: 200 1em arial;
     color: white;
-    margin-top: -90%;
+
     filter: opacity(0%);
 }
-.ltsquare:hover > p {
-    font: 400 1.5em arial;
-    text-align: center;
-    color: white;
-    margin-top: -90%;
+
+.interactive-box:hover > p {
     filter: opacity(100%);
-    text-shadow: 2px 2px 2px black;
+    transition: all 1s ease;
 }
 
 section#img2 {
@@ -119,16 +159,29 @@ section#img2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 100vh;
 
     box-shadow: inset 2px 2px 20px black;
     background-attachment: fixed;
 }
-
 
 footer {
     padding: 15px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.658);
     color: white;
+}
+
+
+
+.montagem{
+    background-image: url("../images/background002.jpg");
+}
+
+.entrega{
+    background-image: url("../images/comprasplchldr.webp");
+}
+
+.medicao{
+    background-image: url("../images/mediçãoplchldr.png");
 }

@@ -28,6 +28,9 @@
       margin-left: 0 !important;
   }
 }
+
+
+.class:hover
 :root {
     --cor01: #091540ff;
     --cor02: #7692ffff;
