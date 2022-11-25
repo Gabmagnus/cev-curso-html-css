@@ -7,32 +7,29 @@
 }
 
 
+/* GLOBAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* HEADER */
 header {
     display: flex;
     top: -10px;
     background-color: var(--cor05);
     height: 100px;
-}
-
-#logo {
+} #logo {
     margin-left: 30px;
     width: 100px;
     height: 100px;
-}
-
-nav {
+} nav {
     align-self: center;
     margin-left: auto;
     margin-right: 30px;
-}
-
-nav > a {
+} nav > a {
     border: 1px solid black;
     border-radius: 10px;
     color: black;
@@ -42,21 +39,14 @@ nav > a {
     text-decoration: none;
     padding: 10px;
     margin: 5px;
-}
-
-nav > a:hover {
-    border: 1px solid black;
-    border-radius: 10px;
+} nav > a:hover {
     color: white;
     background-color: var(--cor04);
-
-    text-align: right;
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
 }
-section#img1 {
-    background-image: url('../images/background001.jpg');
+
+
+/* images */
+section.img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,9 +56,7 @@ section#img1 {
 
     position: relative;
     height: 100vh;
-}
-
-section#img1 > h1 {
+} #img1 > h1 {
     position: relative;
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -77,9 +65,7 @@ section#img1 > h1 {
     line-height: 100%;
     top: 45%;
     transform: translateY(-50%);
-}
-
-section#img1 > h2 {
+} #img1 > h2 {
     position: relative;
     color: rgb(202, 202, 202);
     text-shadow: 2px 2px 2px black;
@@ -89,23 +75,20 @@ section#img1 > h2 {
     transform: translateY(-50%);
 }
 
+/* CONTAINER */
 .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 
-    height: auto;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    height: 100vh;
 
     background-color: var(--cor05);
-}
-
-.interactive-box{
+} .interactive-box {
     display: flex;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
     margin-bottom: 40px;
 
 
@@ -115,17 +98,13 @@ section#img1 > h2 {
     border-radius: 20px;
     filter: brightness(70%);
     box-shadow: 2px 2px 10px black;
-}
-
-.interactive-box:hover {
+} .interactive-box:hover {
     filter: brightness(100%);
     transition: all 1s ease;
     
     box-shadow: 2px 2px 20px black;
 
-}
-
-.interactive-box > h3 {
+} .interactive-box > h3 {
     position: absolute;
     align-self: flex-end;
     text-align: center;
@@ -135,9 +114,7 @@ section#img1 > h2 {
     width: 100%;
 
     border-radius: 0px 0px 20px 20px;
-}
-
-.interactive-box > p {
+} .interactive-box > p {
     position: absolute;
     align-self: center;
     justify-self: center;
@@ -145,24 +122,12 @@ section#img1 > h2 {
     
     font: 200 1em arial;
     color: white;
+    text-shadow: 4px 4px 4px black;
 
     filter: opacity(0%);
-}
-
-.interactive-box:hover > p {
+} .interactive-box:hover > p {
     filter: opacity(100%);
     transition: all 1s ease;
-}
-
-section#img2 {
-    background-image: url('../images/background002.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-
-    box-shadow: inset 2px 2px 20px black;
-    background-attachment: fixed;
 }
 
 footer {
@@ -170,18 +135,4 @@ footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.658);
     color: white;
-}
-
-
-
-.montagem{
-    background-image: url("../images/background002.jpg");
-}
-
-.entrega{
-    background-image: url("../images/comprasplchldr.webp");
-}
-
-.medicao{
-    background-image: url("../images/mediçãoplchldr.png");
 }

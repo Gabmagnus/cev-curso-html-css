@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+
+    <style>
+        * {
+            font: 100 1em arial;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid blueviolet;
+            position:relative;
+        }
+
+        thead {
+            position: sticky;
+            top: -10;
+        }
+        thead, tfoot {
+            background-color: rgb(41, 41, 41);
+            color: white;
+        }
+
+        caption {
+            background-color: lightgray;
+            color: white;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th, td {
+            border: 1px solid black;
+            width: 200px;
+            height: 60px;
+            text-align: left;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: whitesmoke;
+        }
+
+        .num {
+            text-align: right;
+        }
+        .position {
+            text-align: center;
+            width: 50px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <!-- 
+        Anatomia de tabelas grandes
+        CAPTION
+        TABLE
+            THEAD
+                TR, TD, TH. 
+            TBODY
+                TR, TD, TH.
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Populaçao das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="row" class="position">Posição</th>
+                <th scope="row"> UF</th>
+                <th scope="row">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="position">1</td>
+                <td>São paulo</td>
+                <td class="num">41 262 199</td>
+            </tr>
+            <tr>
+                <td class="position">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330</td>
+            </tr>
+            <tr>
+                <td class="position">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">15 989 929</td>
+            </tr>
+            <tr>
+                <td class="position">4</td>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td class="position">5</td>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td class="position">6</td>
+                <td>Rio grande do sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td class="position">7</td>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td class="position">8</td>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td class="position">9</td>
+                <td>Pará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td class="position">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+        </tbody>
+        <tfoot >
+            <td class="position">0</td>
+            <th scope="col">Total de habitantes</th>
+            <td>00000000</td>
+        </tfoot>
+    </table>
+
+    <p style="font-size: 3em;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repellat sequi voluptatem tenetur minima numquam nisi vel aut cum beatae. Sint eaque expedita reiciendis, autem ex assumenda alias. Minima, enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veniam numquam obcaecati reiciendis asperiores quas quibusdam, assumenda cum deleniti, consequatur qui non atque sit error quos repellendus? Amet, officiis quisquam?</p>
+</body>
+</html>
