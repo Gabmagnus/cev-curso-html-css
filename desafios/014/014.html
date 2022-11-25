@@ -17,12 +17,35 @@
             font-weight: 800;
             font-size: 2em;
         }
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            height: 60px;
+            background-color: rgb(107, 107, 107);
+            color: white;
+            font-weight: 900;
+        }
+        th, td {
+            height: 30px;
+            border: 1px solid black ;
+            width: 70px;
+            padding: 5px;
+        }
+        th{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+        }
+        .media {
+            background-color: rgb(107, 107, 107);
+            color: white;
+        }
 
     </style>
 </head>
 <body>
     <h1>Tabela 1</h1>
-
+    
     <table>
         <thead>
             <tr>
@@ -68,28 +91,20 @@
             </tr>
 
             <tr>
-                <th rowspan="4" scope="colgroup">Exatas</th>
-                <td>Matemática</td>
+                <th rowspan="2" scope="colgroup">Humanas</th>
+                <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
-                <td>Física</td>
+                <td>Geografia</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <td>Quimica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td>0.0</td>
-                <td>0.0</td>
+            <tr class="media">
+                <th colspan="4" scope="col">Media de Humanas</th>
                 <td>0.0</td>
             </tr>
 
