@@ -49,7 +49,8 @@ input[id="pass"]  {
 
 input[id="email"]:focus,
 input[id="pass"]:focus  {
-    border: 2px solid white;
+    border: 0;
+    outline-color: #5f7c8a;
 }
 
 input[type="submit"] {
@@ -75,11 +76,32 @@ input[type="submit"]:hover {
     color: #90bdd3;
 }
 
-.lign {
+.hr-or {
+    display: flex;
+    line-height: 1em;
+    margin: 25% 0;
     width: 100%;
-    margin: 20% 0;
+    color: black;
+    text-align: center;
 }
 
+.hr-or::before,
+.hr-or::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+    margin: auto;
+
+}
+
+.hr-or:not(:empty):before,
+.hr-or:not(:empty):after {
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+    
 .cadastro-socialmedia {
     display: flex;
     flex-wrap: wrap;
