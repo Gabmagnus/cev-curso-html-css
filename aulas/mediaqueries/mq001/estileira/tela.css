@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* TELA */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    background-color: lightgray;
+}
+
+header {
+    background-color: darkgray;
+    margin-bottom: 20px;
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+header li {
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+article h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 10px;
+}
+
+article p {
+    margin: 20px 20vw;
+    text-align: justify;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" autocomplete="off"></p>
+        <p><label for="isnome">Sobrenome: </label>
+            <input type="text" name="snome" id="isnome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required maxlength="8">
+        </div>
+        <div>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="5">
+        </div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <h1>Testando coisas do formulário</h1>
+    <form action="cadastro.php">
+        <div>
+        <label for="imatricula">Matrícula: </label>
+        <input type="number" name="matricula" id="imatricula" max="8" min="8" placeholder="Matrícula" required style="width: 80px" >
+        </div>
+        <div>
+            <label for="imedia">Média: </label>
+            <input type="media" name="imedia" id="imatricula" placeholder="Média" required style="width: 80px" >
+        </div>
+    </form>
+</body>
+</html>
