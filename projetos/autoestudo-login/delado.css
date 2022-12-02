@@ -12,6 +12,7 @@ main {
     width: 100vw;
     height: 100vh;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
 }
@@ -19,21 +20,14 @@ main {
 section.login-container {
     padding: 10px; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: white;
-    max-width: 500px;
-    width: 50vw;
-    height: auto;
+    max-height: 800px;
+    height: 50vh;
+    width: auto;
     border-radius: 10px;
 }
-
-.login {
-    height: 100%;
-    text-align: center;
-    size: auto;
-}
-
 section.login-container h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #5f7c8a;
@@ -96,7 +90,7 @@ input[type="submit"]:hover {
 .hr-or::before,
 .hr-or::after {
     content: "";
-    flex: 1 1;
+    flex: 1;
     border-bottom: 1px solid rgba(0, 0, 0, 0.63);
     margin: auto;
 
@@ -108,7 +102,6 @@ input[type="submit"]:hover {
     margin-left: 20px;
 
 }
-
     
 .cadastro-socialmedia {
     display: flex;
@@ -147,30 +140,4 @@ input[type="submit"]:hover {
     }
   }
 
-  @media screen and (max-height: 600px) {
-    section.login-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        max-height: 800px;
-        height: auto;
-        width: auto;
-    }
 
-    .hr-or::before,
-    .hr-or::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
-    margin: auto;
-    }
-
-    .hr-or {
-        display: flex;
-        line-height: 1em;
-        margin: 25% 0;
-        width: 20%;
-        color: black;
-        text-align: center;
-    }
-}
