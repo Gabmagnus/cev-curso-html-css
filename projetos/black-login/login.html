@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --background-color: #1A0F25;
+            --main-font-color: #34B8A5;
+            --menu-login-color: #371f4e;
+            --menu-login-input-color: #57456A;
+            --menu-login-text-color: #00F779;
+        }
+        *{padding: 0; margin: 0; box-sizing: border-box;font-family:'Noto Sans';}
+
+        body {
+            height: 100vh;
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        div#main-left-image {
+            background: var(--background-color);
+            width: 50vw;
+            height: 100vh;
+        }
+
+        div#main-right-login {
+            background: var(--background-color);
+            width: 50vw;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.login {
+            position: relative;
+            background: var(--menu-login-color);
+            max-width: 500px;
+            width: 350px;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            box-shadow: 0, 0, 0.9px, black;
+        }
+
+        .login h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: var(--menu-login-text-color);
+        }
+
+        .login form input {
+            background-color: var(--menu-login-input-color);
+            border: none;
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+            color: #ccc;
+            padding: 10px;
+            font-size: 1em;
+            margin: 20px 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+        }
+
+        .login form label {
+            position: absolute;
+            transform: translate(45px, -5px);
+            color: #ccc;
+        }
+
+        .login form input[type=submit] {
+            margin-top: 60px;
+            background-color: var(--menu-login-text-color);
+            color: var(--background-color);
+            font-weight: 900;
+            cursor: pointer;
+            font-size: 1.4em;
+        }
+
+        .login form input[type=submit]:hover {
+            transform: scale(95%);
+            transition: .5s;
+        }
+
+        #main-left-image {
+            position: relative;
+            padding: 2% 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            color: var(--main-font-color);
+        }
+        
+        #main-left-image h1 {
+            font-size: 3em;
+            text-align: left;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        #main-left-image img {
+            width: 500px;
+            height: 500px;
+        }
+
+        @media screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+            div#main-left-image {
+                width: 100vw;
+            }
+            div#main-right-login {
+                width: 100vw;
+                height: 150vh;
+            }
+           #main-left-image img {
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            }
+            #main-left-image h1 {
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="main-left-image">
+            <h1>Faça login <br> E entre para nosso time </h1>
+            <img src="images/login-image.png" alt="main-image-login-screen">
+        </div>
+        <div id="main-right-login">
+            <div class="login">
+                <h2>LOGIN</h2>
+                <form action="login.php" method="post">
+                    <label for="email">Usuário</label>
+                    <input type="email" name="email" id="email" placeholder="Usuário">
+                    <label for="pass">Senha</label>
+                    <input type="password" name="pass" id="pass" placeholder="Senha">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+    </script>
+</body>
+</html>

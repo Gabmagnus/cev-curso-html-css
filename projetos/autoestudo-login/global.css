@@ -71,19 +71,16 @@ input[type="submit"] {
     color: white;
     font-size: 1em;
     cursor: pointer;
-
 }
 input[type="submit"]:hover {
     background-color: #5f7c8a;
     transition: all .5s;
 }
-
 #forgot-pass, #signup{
     text-decoration: none;
     color: #90bdd3;
     text-align: center;
 }
-
 .hr-or {
     display: flex;
     line-height: 1em;
@@ -92,7 +89,6 @@ input[type="submit"]:hover {
     color: black;
     text-align: center;
 }
-
 .hr-or::before,
 .hr-or::after {
     content: "";
@@ -101,15 +97,12 @@ input[type="submit"]:hover {
     margin: auto;
 
 }
-
 .hr-or:not(:empty):before,
 .hr-or:not(:empty):after {
     margin-right: 20px;
     margin-left: 20px;
 
 }
-
-    
 .cadastro-socialmedia {
     display: flex;
     flex-wrap: wrap;

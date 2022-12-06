@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botao linear</title>
+
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        :root {
+            --color1:#736CED;
+            --color2:#9f9fed;
+            --color3:#D4C1EC;
+            --color4:#FEF9FF;
+            --color5:#F2DFD7;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.menu{
+            position: relative;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row;
+            width: 500px;
+            height: 100px;
+        }
+        div.toggler {
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--color2);
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgb(0,0,0,0.35);
+        }
+    
+        .toggler ion-icon {
+            color: var(--color4);
+            font-size: 4em;
+            transition: all 1s;
+        }
+
+        .menu.active .toggler ion-icon {
+            transform: rotate(180deg);
+            transition: all 1s;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #FEF9FF;
+            background: #9f9fed;
+            font-size: 1.6em;
+            
+            position: absolute;
+            list-style: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            transition: calc(1.4s / 6 * var(--i));
+            left: 50px;
+            box-shadow: 0px 0px 10px rgb(0,0,0,0.35);
+        }
+
+        .menu.active a {
+            transform: translate(calc(450px / 7 * var(--i))) ;
+            transition: calc(1.4s / 6 * var(--i));
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="toggler"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+                <a href="#" style="--i:1"><ion-icon name="folder-outline"></ion-icon></a>
+                <a href="#" style="--i:2"><ion-icon name="folder-outline"></ion-icon></a>
+                <a href="#" style="--i:3"><ion-icon name="folder-outline"></ion-icon></a>
+                <a href="#" style="--i:4"><ion-icon name="folder-outline"></ion-icon></a>
+                <a href="#" style="--i:5"><ion-icon name="folder-outline"></ion-icon></a>
+                <a href="#" style="--i:6"><ion-icon name="folder-outline"></ion-icon></a>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let menu = document.querySelector('.menu')
+        let toggler = document.querySelector('.toggler')
+        toggler.onclick = function() {
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

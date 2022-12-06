@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top, red, rgb(88, 0, 0));
+        }
+        .login-container {
+            max-height: 500px;
+            height: 50%;
+            width: 30%;
+            display: flex;
+            box-shadow: 2px 2px 6px black;
+        }
+        .image{
+            max-height: 500px;
+            height: 50%;
+            width: 30%;
+            background-image: url("imagens/flamengo-bg.jpeg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 20px 0px 0px 20px;
+        }
+        .login{
+            height: 50%;
+            width: 30%;
+            background-color: white;
+            border-radius: 0px 20px 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <section class="image">
+            </section>
+            <section class="login">
+                <h1>Login</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci, placeat labore perferendis Lorem ipsum dolor sit </p>
+                <form action="login.php" method="post">
+                    <input type="email" name="mail" id="mail" required placeholder="E-mail">
+                    <input type="email" name="pass" id="pass" required placeholder="Senha">
+                    <input type="submit" value="Login">
+                </form>
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
